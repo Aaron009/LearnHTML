@@ -1,0 +1,11 @@
+<div>1111</div>
+<input type="button" value="°´Å¥Ãû">
+<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+<script>
+    let btn = $("input:button");
+    btn.data("div", $("div"));
+    btn.click(function () {
+        let div = $(this).data("div");
+        alert(div.html())
+    });
+</script>
